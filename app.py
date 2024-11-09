@@ -19,8 +19,9 @@ st.sidebar.title("Navigation")
 section = st.sidebar.radio(
     "Select a section",
     ("🏠 Home", "🤖 Health Assistant AI", "😊 Emotion Detection", "🩺 Report Analysis"),
-    index=("🏠 Home", "🤖 Health Assistant AI", "😊 Emotion Detection", "🩺 Report Analysis").index(st.session_state.section)
+    index=0  # Set "🏠 Home" as the default option
 )
+
 
 # Update section in session state only if it changed via sidebar
 
