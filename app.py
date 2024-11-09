@@ -12,7 +12,7 @@ path = "a1.json"
 with open(path, "r") as file:
     url = json.load(file)
 
-
+# Initialize session state for navigation
 
 # Sidebar navigation
 st.sidebar.title("Navigation")
@@ -22,8 +22,6 @@ section = st.sidebar.radio(
     index=0  # Set "🏠 Home" as the default option
 )
 
-
-# Update section in session state only if it changed via sidebar
 
 
 # Home Page
@@ -109,3 +107,4 @@ elif section == "🩺 Report Analysis":
 
 st.markdown("---")
 st.markdown("Powered by Healthcare AI © 2024. For support, contact [ddwivedi2003@gmail.com](mailto:ddwivedi2003@gmail.com).")
+
