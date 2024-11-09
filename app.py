@@ -106,5 +106,5 @@ elif section == "🩺 Report Analysis":
             st.write(diagnosis)
 
 st.markdown("---")
-st.markdown("Powered by Healthcare AI © 2024. For support, contact [ddwivedi2003@gmail.com](mailto:ddwivedi2003@gmail.com).")
+st.markdown("Powered by Healthcare AI © 2024. For support, contact [Dewashish Dwivedi](mailto:ddwivedi2003@gmail.com).")
 
