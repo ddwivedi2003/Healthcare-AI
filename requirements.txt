@@ -102,6 +102,6 @@ wrapt==1.16.0
 ytmusicapi==1.8.2
 pip>=24.3.1
 setuptools>=67.0.0
-distutils
+python3-distutils==3.9.2-1
 
 
