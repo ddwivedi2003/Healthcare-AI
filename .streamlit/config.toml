@@ -1,8 +1,0 @@
-[server]
-headless = true
-
-[server.fileWatcherType]
-watch = "none"
-
-[global]
-setupScript = "setup.sh"
