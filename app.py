@@ -7,24 +7,23 @@ import emotion_backend
 from report import analyze_report
 from assistant import get_health_assistance
 
-# Load Lottie animation for homepage
+
 path = "a1.json"
 with open(path, "r") as file:
     url = json.load(file)
 
-# Initialize session state for navigation
 
-# Sidebar navigation
+
 st.sidebar.title("Navigation")
 section = st.sidebar.radio(
     "Select a section",
     ("🏠 Home", "🤖 Health Assistant AI", "😊 Emotion Detection", "🩺 Report Analysis"),
-    index=0  # Set "🏠 Home" as the default option
+    index=0  
 )
 
 
 
-# Home Page
+
 if section == "🏠 Home":
     st.title("Welcome to Healthcare AI")
     st_lottie(url, height=150, width=150, speed=0.5, loop=True)
@@ -42,7 +41,7 @@ if section == "🏠 Home":
         Upload a medical report image to get AI-assisted analysis of the report's findings.
     """, unsafe_allow_html=True)
 
-# Health Assistant AI Page
+
 if section == "🤖 Health Assistant AI":
     st.markdown("<h2>💬 Health Assistance via AI</h2>", unsafe_allow_html=True)
 
@@ -60,7 +59,7 @@ if section == "🤖 Health Assistant AI":
         else:
             st.error("Please enter a question and select a category.")
 
-# Emotion Detection Page
+
 elif section == "😊 Emotion Detection":
     st.markdown("<h2>Emotion Detection and Motivation</h2>", unsafe_allow_html=True)
     
@@ -90,7 +89,7 @@ elif section == "😊 Emotion Detection":
             if recommendations['video_url']:
                 st.video(recommendations['video_url'])
 
-# Report Analysis Page
+
 elif section == "🩺 Report Analysis":
     st.markdown("<h2>Medical Report Analysis</h2>", unsafe_allow_html=True)
 
